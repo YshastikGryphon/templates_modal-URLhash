@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="jquery.js"></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/additional.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- 
+    Connect modal and link
+
+    a [href = {id}]
+    .window-js [id = {id}]
+  -->
+  <main class="main">
+    <div class="container">
+      <h1 class="main__title">
+        Модульные окна по хэшу в Url
+      </h1>
+      <ul class="main__list">
+        <li class="main__list-item">
+          <a href="#modal1">
+            Модальное окно 1
+          </a>
+        </li>
+        <li class="main__list-item">
+          <a href="#modal2">
+            Модальное окно 2
+          </a>
+        </li>
+        <li class="main__list-item">
+          <a href="#modal3">
+            Модальное окно 3
+          </a>
+        </li>
+        <li class="main__list-item">
+          <a href="#modal6">
+            Модальное окно 6
+          </a>
+        </li>
+        <li class="main__list-item">
+          <a href="#modal7">
+            Модальное окно 7
+          </a>
+        </li>
+      </ul>
+      <p class="main__text">
+        Поддерживает системную навигацию браузера
+      </p>
+      <p class="main__text">
+        Подгружает закрытые окна после перезагрузки
+      </p>
+      <p class="main__text">
+        Нажатие на фон - назад<br>
+        Нажатие на крестик - закрыть всё
+      </p>
+    </div>
+  </main>
+  
+  <!-- basic sctucture-->
+  <div class="window-js modal" id="modal1" style="display:none;">
+    <div class="modal-bg window-js-back"></div>
+    <div class="modal-window">
+      <div class="modal-window-close window-js-clear" title="Закрыть"></div>
+      <div class="modal-window-overflow">
+        <div class="modal-window-content">
+          <!-- inner content -->
+          <div class="main-modal">
+            <div class="main-modal__content">
+              <h2 class="main-modal__content-title">
+                modal 1
+              </h2>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- *** -->
+  <div class="window-js modal" id="modal2" style="display:none;">
+    <div class="modal-bg window-js-back"></div>
+    <div class="modal-window">
+      <div class="modal-window-close window-js-clear" title="Закрыть"></div>
+      <div class="modal-window-overflow">
+        <div class="modal-window-content">
+          <!-- inner content -->
+          <div class="main-modal">
+            <div class="main-modal__content">
+              <h2 class="main-modal__content-title">
+                Модальное окно 2 - переполнение текстом
+              </h2>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="window-js modal" id="modal3" style="display:none;">
+    <div class="modal-bg window-js-back"></div>
+    <div class="modal-window">
+      <div class="modal-window-close window-js-clear" title="Закрыть"></div>
+      <div class="modal-window-overflow">
+        <div class="modal-window-content">
+          <!-- inner content -->
+          <div class="main-modal">
+            <div class="main-modal__content">
+              <h2 class="main-modal__content-title">
+                Модальное окно 3 - переход в несколько окон
+              </h2>
+              <p class="main-modal__content-desc">
+                <a href="#modal4">Открыть окно 4</a>
+              </p>
+              <p class="main-modal__content-desc">
+                <a class="window-js-back" href="javascript:void(0);">Назад</a>
+              </p>
+              <p class="main-modal__content-desc">
+                <a class="window-js-clear" href="javascript:void(0);">Закрыть все окна</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="window-js modal" id="modal4" style="display:none;">
+    <div class="modal-bg window-js-back"></div>
+    <div class="modal-window">
+      <div class="modal-window-close window-js-clear" title="Закрыть"></div>
+      <div class="modal-window-overflow">
+        <div class="modal-window-content">
+          <!-- inner content -->
+          <div class="main-modal">
+            <div class="main-modal__content">
+              <h2 class="main-modal__content-title">
+                Модальное окно 4 - переход в несколько окон
+              </h2>
+              <p class="main-modal__content-desc">
+                <a href="#modal5">Открыть окно 5</a>
+              </p>
+              <p class="main-modal__content-desc">
+                <a class="window-js-back" href="javascript:void(0);">Назад</a>
+              </p>
+              <p class="main-modal__content-desc">
+                <a class="window-js-clear" href="javascript:void(0);">Закрыть все окна</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="window-js modal" id="modal5" style="display:none;">
+    <div class="modal-bg window-js-back"></div>
+    <div class="modal-window">
+      <div class="modal-window-close window-js-clear" title="Закрыть"></div>
+      <div class="modal-window-overflow">
+        <div class="modal-window-content">
+          <!-- inner content -->
+          <div class="main-modal">
+            <div class="main-modal__content">
+              <h2 class="main-modal__content-title">
+                Модальное окно 5 - переход в несколько окон
+              </h2>
+              <p class="main-modal__content-desc">
+                <a href="#modal1">Открыть окно 1</a>
+              </p>
+              <p class="main-modal__content-desc">
+                <a class="window-js-back" href="javascript:void(0);">Назад</a>
+              </p>
+              <p class="main-modal__content-desc">
+                <a class="window-js-clear" href="javascript:void(0);">Закрыть все окна</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="window-js modal" id="modal6" style="display:none;">
+    <div class="modal-bg window-js-back"></div>
+    <div class="modal-window">
+      <div class="modal-window-close window-js-clear" title="Закрыть"></div>
+      <div class="modal-window-overflow">
+        <div class="modal-window-content">
+          <!-- inner content -->
+          <div class="main-modal">
+            <div class="main-modal__content">
+              <h2 class="main-modal__content-title">
+                modal 6
+              </h2>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="window-js modal" id="modal7" style="display:none;">
+    <div class="modal-bg window-js-back"></div>
+    <div class="modal-window">
+      <div class="modal-window-close window-js-clear" title="Закрыть"></div>
+      <div class="modal-window-overflow">
+        <div class="modal-window-content">
+          <!-- inner content -->
+          <div class="main-modal">
+            <div class="main-modal__content">
+              <h2 class="main-modal__content-title">
+                modal 7
+              </h2>
+              <p class="main-modal__content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi esse tenetur et? Sapiente ad illo, minus ipsa omnis optio impedit porro nam praesentium temporibus sed obcaecati vero enim quae?
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
