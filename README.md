@@ -1,2 +1,5 @@
-# templates_modal-URLhash
-Simple script to display modal windows with a system navigation support
+# Модальные окна
+Простой шаблон позволяющий создавать модальные окна с поддержкой системной навигации
+- Открытие на основе хэша в URL
+- Центрирование через flexbox
+- Лимит активных окон с display property
